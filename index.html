@@ -6,42 +6,76 @@
     <title>Kue Kering Premium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Mengatur Palet Warna Pink Custom */
+        :root {
+            --pink-soft: #ffe4e1;  /* Pink pastel lembut untuk background */
+            --pink-main: #d81b60;  /* Pink cerah untuk tombol dan aksen */
+            --pink-dark: #880e4f;  /* Pink gelap elegan untuk navigasi */
+        }
+
+        /* Modifikasi warna Navbar */
+        .navbar-custom {
+            background-color: var(--pink-dark);
+        }
+
+        /* Modifikasi area Hero */
         .hero-section {
-            background-color: #f8f9fa;
+            background-color: var(--pink-soft);
             padding: 100px 0;
             text-align: center;
+            color: var(--pink-dark); /* Menggelapkan teks agar kontras dengan background pastel */
+        }
+
+        /* Modifikasi Tombol Custom Pink */
+        .btn-custom-pink {
+            background-color: var(--pink-main);
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 30px; /* Membuat sudut tombol lebih membulat */
+        }
+
+        /* Warna tombol saat kursor diarahkan ke atasnya (Hover) */
+        .btn-custom-pink:hover {
+            background-color: var(--pink-dark);
+            color: white;
+        }
+
+        /* Warna teks judul fitur */
+        .text-pink-main {
+            color: var(--pink-main);
         }
     </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container">
-            <a class="navbar-brand" href="#">Delight Cookies</a>
+            <a class="navbar-brand fw-bold" href="#">Delight Cookies</a>
         </div>
     </nav>
 
     <section class="hero-section">
         <div class="container">
             <h1 class="display-4 fw-bold">Cita Rasa Premium di Setiap Gigitan</h1>
-            <p class="lead text-muted mt-3">Sajikan kehangatan untuk keluarga dengan kue kering eksklusif kami. Dibuat dengan bahan pilihan terbaik.</p>
-            <a href="#" class="btn btn-warning btn-lg mt-4">Pesan Sekarang</a>
+            <p class="lead mt-3">Sajikan kehangatan untuk keluarga dengan kue kering eksklusif kami. Dibuat dengan bahan pilihan terbaik.</p>
+            <a href="#" class="btn btn-custom-pink btn-lg mt-4 px-5">Pesan Sekarang</a>
         </div>
     </section>
 
     <div class="container mt-5 mb-5">
         <div class="row text-center">
             <div class="col-md-4">
-                <h3>Bahan Berkualitas</h3>
-                <p>Hanya menggunakan mentega dan bahan baku premium pilihan.</p>
+                <h3 class="text-pink-main fw-bold">Bahan Berkualitas</h3>
+                <p class="text-muted">Hanya menggunakan mentega dan bahan baku premium pilihan.</p>
             </div>
             <div class="col-md-4">
-                <h3>Resep Autentik</h3>
-                <p>Dibuat dengan resep rahasia yang sudah teruji kenikmatannya.</p>
+                <h3 class="text-pink-main fw-bold">Resep Autentik</h3>
+                <p class="text-muted">Dibuat dengan resep rahasia yang sudah teruji kenikmatannya.</p>
             </div>
             <div class="col-md-4">
-                <h3>Kemasan Eksklusif</h3>
-                <p>Cocok untuk dijadikan hampers atau hadiah spesial untuk orang terdekat.</p>
+                <h3 class="text-pink-main fw-bold">Kemasan Eksklusif</h3>
+                <p class="text-muted">Cocok untuk dijadikan hampers atau hadiah spesial untuk orang terdekat.</p>
             </div>
         </div>
     </div>
